@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body
+{
+  font-family: 'Roboto', sans-serif;
+}
+.Navigacija 
+{
+  width: 100%;
+  justify-content: left;
+}
+.Navigacija a
+{
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.black
+{
+  background-color: #000;
+}
+.nav-link__text
+{
+  color: white !important;
+}
+.fa
+{
+  padding-right: 10px;
+  color: gold !important;
+}
+.login-col
+{
+  color:blue
+}
+#aboutmeni{
+  padding-right: 20px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  animation: bounceInFromRight 0.75s;
+}
+#aboutmeni a{
+  padding: 10px;
+  font-size: 0.8rem;
+  color: orange;
+}
+#currentUser {
+  color: blue;
+}
+@media (max-width: 1050px)
+{
+  #aboutmeni{
+    display: none;
+  }
+
+}
+@keyframes bounceInRight 
+{
+  0% 
+  {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% 
+  {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% 
+  {
+    transform: translateX(10px);
+  }
+  100% 
+  {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=email],
+input[type=password] {
+  width: 100%;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.formBtn {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.container {
+  margin: 150px auto;
+}
+
+.container form {
+  margin: auto;
+  width: 30%;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+span.psw a {
+  text-decoration: none;
+}
+
+#message {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10% 20%;
+  }
+
+  .container form {
+    width: 40%;
+  }
+
+  .container h2 {
+    font-size: 15px;
+  }
+}

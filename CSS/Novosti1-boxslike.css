@@ -1,0 +1,39 @@
+.boxslika
+{
+    text-align: center !important ;
+}
+.thumbnails {
+    width: 20%;
+    height: 20%;
+    border-radius: 2px;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+}
+  @media only screen and (max-width: 1300px)
+  {
+    .thumbnails
+    {
+      width: 25%;
+    }
+  }
+  @media only screen and (max-width: 1050px)
+  {
+    .thumbnails
+    {
+      width: 30%;
+    }
+  }
+  @media only screen and (max-width: 850px)
+  {
+    .thumbnails
+    {
+      width: 35%;
+    }
+  }
+  @media only screen and (max-width: 550px)
+  {
+    .thumbnails
+    {
+      width: 40%;
+    }
+  }

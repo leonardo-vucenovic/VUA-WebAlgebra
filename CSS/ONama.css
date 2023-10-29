@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,500");
+
+.kampus-slika {
+  width: 100%;
+  height: 350px;
+  animation-name: kampusSlika;
+  animation-duration: 1s;
+  object-fit: cover;
+}
+
+@keyframes kampusSlika {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 350px;
+  }
+}
+
+.o-nama {
+  text-align: center;
+}
+
+.o-nama h1 {
+  border-bottom: 4px solid gold;
+  padding-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.caligraphy-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: rgb(230, 230, 230);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.caligraphy-text {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.caligraphy-text p {
+  font-family: "Dancing Script" !important;
+  margin: auto;
+  text-align: justify;
+  width: 60%;
+  font-size: 27px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.spacer {
+  padding-bottom: 4rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 4rem;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.col {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+}
+
+.headers {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.headers h1,
+.headers h1 i {
+  font-weight: 600;
+  color: #a00000 !important;
+}
+
+.col-img {
+  display: flex;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2rem;
+  flex: 1 0 20%;
+}
+
+.article-img h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 15px;
+}
+
+.article-img img {
+  width: 30%;
+  height: 30%;
+}
+
+.col-kdn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2.5px;
+  border: 1px solid lightgrey;
+  flex: 1 0 25%;
+}
+
+.article h2 {
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid liggrehtgrey;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+}
+
+.article p {
+  padding: 0% 5% 5% 5%;
+  font-family: "Open Sans Condensed";
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.article-kdn h2 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.article-kdn p {
+  padding: 0 15% 3% 15%;
+  font-weight: 300;
+  font-family: "Open Sans Condensed";
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.kdn-icons > i {
+  color: steelblue !important;
+}
+
+.kako-do-nas-info .columns .col-kdn {
+  background-color: white !important;
+}
+
+.map {
+  margin: auto;
+  width: 75%;
+  height: 30rem;
+}
+
+.map-spacer {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1240px) {
+  .columns {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+
+  .col {
+    margin-bottom: 2rem;
+  }
+
+  .map-spacer {
+    margin-top: -1.5rem;
+  }
+}

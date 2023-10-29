@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="CSS/Navigacija.css" />
+<nav class="navbar navbar-expand-lg navbar-darkk black py-3 fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler"type="button"data-bs-toggle="collapse"data-bs-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup"aria-expanded="false"aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <!--Main navigation-->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a id="PrijaviSeBtn"class="nav-link nav-link__text active"aria-current="page"href="PrijaviSe.html"hreflang="hr">Prijavi se&nbsp;<i class="fa-solid fa-right-to-bracket login-col"></i></a>
+          <a onclick="Logout(event)"id="OdjaviSeBtn"class="nav-link nav-link__text active"aria-current="page"href="#"hreflang="hr">Odjava se&nbsp;<i class="fa-solid fa-right-to-bracket login-col"></i><i id="currentUser"></i></a>
+          <a class="nav-link nav-link__text"aria-current="page"href="Pocetna.html"hreflang="hr"><i class="fa fa-home"></i>Početna</a>
+          <a class="nav-link nav-link__text" href="ONama.html" hreflang="hr"><i class="fa fa-comments-o"></i>O nama</a>
+          <a class="nav-link nav-link__text" href="Novosti.html" hreflang="hr"><i class="fa fa-info-circle"></i>Novosti</a>
+          <a class="nav-link nav-link__text NastavniPlanBtn"id="NastavniPlanBtn"href="NastavniPlan.html"hreflang="hr"><i class="fa fa-info-circle"></i>Nastavni plan</a>
+          <a id="contactForm"class="nav-link nav-link__text"hreflang="hr"href="#modal"data-bs-target="#modal"data-bs-toggle="modal"><i class="fa fa-envelope"></i>Kontakt</a>
+        </div>
+      </div>
+      <div id="aboutmeni">
+        <a class="nav-link" href="#nase-vrijednosti">Naše vrijednosti</a>
+        <a class="nav-link" href="#povijest">Povijest</a>
+        <a class="nav-link" href="#algebra-grupa">Algebra grupa</a>
+        <a class="nav-link" href="#kako-do-nas">Kako do nas</a>
+      </div>
+    </div>
+  </nav>
+<!--Window-->
+<div class="modal fade" id="modal" style="margin-top: 7%">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa fa-envelope" id="envelope"></i>Kontaktirajte nas</h3>
+      </div>
+      <div class="modal-body">
+
+        <form> 
+          <div class="form-group">
+            <label for="inputName">Puno ime:</label>
+            <input type="text" class="form-control" id="inputName"/>
+          </div>
+
+          <div class="form-group">
+            <label for="inputEmail">E-mail:</label>
+            <input id="inputEmail"type="email"class="form-control"required/>
+          </div>
+
+          <div class="form-group">
+            <label for="selectImportance">Važnost poruke:</label>
+            <select class="form-control" id="selectImportance">
+              <option>Visoka</option>
+              <option>Niska</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="textArea">Vaša poruka</label>
+            <textarea class="form-control rounded'0"id="textArea"rows="5"required></textarea>
+          </div>
+
+          <div class="form-group align-items-center">
+            <label class="form-check-label" for="gridCheck">Primaj newsletter:</label>
+            <input class="form-check-input" type="checkbox" id="gridCheck" style="margin-left: 4px;" />
+          </div>
+
+          <button type="submit" style="margin-top: 10px;" formaction="https://www.fulek.com/mvc/supit/project-contact-form" class="btn btn-primary">Pošalji</button>
+          <button type="button" style="margin-top: 10px;" class="btn btn-danger" data-bs-dismiss="modal">Odustani</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/5a17698d7d.js"crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="Navigacija.js"></script>
+  

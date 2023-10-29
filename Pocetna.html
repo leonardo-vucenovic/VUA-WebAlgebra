@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/Pocetna.css"/>
+  <link rel="stylesheet" href="PrijavaRegistracijaNavigacija.js">
+  <link rel="shortcut icon" href="../ImageAndVideo/Algebra-logo.png" type="image/x-icon">
+  <title>Algebra</title>
+</head>
+<body>
+<header>
+  <div id="Navigacija"></div>
+</header>
+<!--Main-->
+<!--Video-->    
+<div class="video">
+  <div id="tekst_na_videu"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="../ImageAndVideo/typingOnlaptop.mp4" type="video/mp4">
+    </video>
+</div>
+<!--Text-->
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script> <!--Type-->
+<script>
+  new TypeIt("#tekst_na_videu")
+  .type('Budi izvrstan u onom što vidiš!')
+  .pause(300)
+  .options({speed: 200}) 
+  .delete(6)
+  .options({speed: 200})
+  .pause(300) 
+  .type(' voliš.')
+  .pause(500)
+  .break()
+  .options({speed: 200})
+  .type('<b>ZAISKRI.</b>')
+  .pause(1000)
+  .go();
+</script>
+<!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="PrijavaRegistracijaNavigacija.js"></script>
+</body>
+</html>
