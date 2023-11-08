@@ -127,7 +127,9 @@ function DeleteSubjectFromTable(button, kolegij)
     Sum();
   });
 }
+/*
 function ChechPage(){
   if(localStorage.getItem("token") === null);
   window.location.href = "Pocetna.html";
 }
+*/
