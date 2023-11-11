@@ -11,7 +11,7 @@ function ShowTable()
   $("#tablica").show();
 }
 
-ChechPage();
+//ChechPage();
 GetAllSubjectes();
 function GetAllSubjectes()
 {
